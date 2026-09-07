@@ -1,27 +1,31 @@
-function AboutUs() {
-  return (
-    <div>
-      <h1>About Paradise Nursery</h1>
+import React from "react";
 
-      <p>
-        Paradise Nursery is an online plant shop that provides a variety
-        of beautiful plants for homes, offices, and gardens.
-      </p>
+const AboutUs = () => {
+return ( <div className="about-us-container"> <h1>About Us</h1>
 
-      <p>
-        Our goal is to make it easy for customers to explore plants,
-        view their details and prices, and add their favorite plants
-        to a shopping cart.
-      </p>
+```
+  <h2>Welcome to e-plantShopping</h2>
 
-      <h2>Our Mission</h2>
+  <p>
+    e-plantShopping is an online plant shopping platform that makes it
+    easy for customers to explore and purchase a variety of plants.
+  </p>
 
-      <p>
-        We aim to provide a simple and user-friendly online shopping
-        experience for plant lovers.
-      </p>
-    </div>
-  );
-}
+  <p>
+    Our mission is to provide a simple, convenient, and user-friendly
+    shopping experience for plant lovers. We offer a wide selection of
+    plants and make it easy for customers to find the right plants for
+    their homes and gardens.
+  </p>
+
+  <p>
+    At e-plantShopping, we are committed to making plant shopping
+    accessible and enjoyable for everyone.
+  </p>
+</div>
+```
+
+);
+};
 
 export default AboutUs;
