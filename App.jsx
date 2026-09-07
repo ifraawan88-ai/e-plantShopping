@@ -1,20 +1,31 @@
-import "./App.css";
+import React, { useState } from "react";
 
 function App() {
-  return (
-    <div className="landing-page">
-      <div className="content">
-        <h1>Paradise Nursery</h1>
+const [showProductList, setShowProductList] = useState(false);
 
-        <p>
-          Welcome to Paradise Nursery, your online destination for
-          beautiful and healthy plants.
-        </p>
+return ( <div>
+{!showProductList ? ( <div className="landing-page"> <h1>Paradise Nursery</h1>
 
-        <button>Get Started</button>
-      </div>
+```
+      <p>
+        Welcome to Paradise Nursery, your online destination for
+        beautiful plants.
+      </p>
+
+      <button onClick={() => setShowProductList(true)}>
+        Get Started
+      </button>
     </div>
-  );
+  ) : (
+    <div className="product-list">
+      <h2>Our Plants</h2>
+      <p>Explore our collection of plants.</p>
+    </div>
+  )}
+</div>
+```
+
+);
 }
 
 export default App;
